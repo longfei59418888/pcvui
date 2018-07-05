@@ -1,0 +1,22 @@
+{
+  "name": "pcvui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/longfei59418888/pcvui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/longfei59418888/pcvui/issues"
+  },
+  "homepage": "https://github.com/longfei59418888/pcvui#readme",
+  "dependencies": {
+    "yargs": "^12.0.1"
+  }
+}
