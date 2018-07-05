@@ -15,9 +15,15 @@ exec('git add .',(error)=>{
                 return
             }
             if(stdout.indexOf("Already up to date") != -1){
-                console.log(stdout)
-            }
+                exec('git push',(error,stdout)=>{
+                    console.log(error,stdout)
+                    if(error){
+                        console.error(`exec pull error: ${error}`)
+                        return
+                    }
 
+                })
+            }
         })
     })
 })
