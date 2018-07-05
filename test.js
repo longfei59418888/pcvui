@@ -1,5 +1,5 @@
 const { spawn } = require('child_process');
-const ls = spawn('git', ['add', '.']);
+const ls = spawn('git', ['add', '']);
 ls.stdout.on('data', (data) => {
 
 
