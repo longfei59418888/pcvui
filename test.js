@@ -14,7 +14,7 @@ exec('git add .',(error)=>{
                 console.error(`exec pull error: ${error}`)
                 return
             }
-            if(stdout == '1'){
+            if(stdout){
                 console.log(stdout)
             }
 
