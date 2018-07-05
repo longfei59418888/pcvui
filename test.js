@@ -1,9 +1,5 @@
 const { spawn } = require('child_process');
-const ls = spawn('git', ['add', '']);
-ls.stdout.on('data', (data) => {
-
-
-});
+const ls = spawn('git', ['add', '.']);
 ls.stderr.on('data', (data) => {
     console.log(`add - 错误：${data}`);
 });
