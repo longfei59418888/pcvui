@@ -14,7 +14,7 @@ exec('git add .',(error)=>{
                 console.error(`exec pull error: ${error}`)
                 return
             }
-            if(stdout == "Already up to date."){
+            if(stdout == "Already up to date"){
                 console.log(stdout)
             }
 
