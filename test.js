@@ -4,16 +4,18 @@ exec('git add .',(error)=>{
         console.error(`exec add error: ${error}`)
         return
     }
-    exec('git commit -m d',(error,stdout,stderr)=>{
+    exec('git commit -m d',(error)=>{
         if(error){
             console.error(`exec commit error: ${error}`)
             return
         }
-        exec('git pull',(error,stdout,stderr)=>{
-            console.log(error,stdout)
+        exec('git pull',(error,stdout)=>{
             if(error){
                 console.error(`exec pull error: ${error}`)
                 return
+            }
+            if(stdout == '1'){
+                console.log(stdout)
             }
 
         })
