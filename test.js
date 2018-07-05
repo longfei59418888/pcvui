@@ -16,12 +16,11 @@ exec('git add .',(error)=>{
             }
             if(stdout.indexOf("Already up to date") != -1){
                 exec('git push',(error,stdout)=>{
-                    console.log(error,stdout)
                     if(error){
-                        console.error(`exec pull error: ${error}`)
+                        console.error(`exec push error: ${error}`)
                         return
                     }
-
+                    console.log(`exec push success!`)
                 })
             }
         })
