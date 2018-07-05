@@ -5,11 +5,11 @@ ls.stderr.on('data', (data) => {
 });
 ls.on('close', (code) => {
     if(code == 0){
-        let ls = spawn('git', ['commit', '-m',"test"]);
-        ls.stderr.on('data', (data) => {
+        let lss = spawn('git', ['commit', '-m',"test"]);
+        lss.stderr.on('data', (data) => {
             console.log(`commit-错误：${data}`);
         });
-        ls.on('close', (code) => {
+        lss.on('close', (code) => {
             console.log(`commit-子进程退出码：${code}`);
         });
     }
